@@ -18,7 +18,7 @@ async function searchMovies() {
     console.log('Starting Search for:', query);
     
     try {
-        const url = `http://www.omdbapi.com/?s=${encodeURIComponent(query)}&apikey=2788aa23`;
+        const url = `https://www.omdbapi.com/?s=${encodeURIComponent(query)}&apikey=2788aa23`;
         console.log('Fetching URL:', url);
         const response = await fetch(url)
         console.log('Response received. Status:', response.status);
